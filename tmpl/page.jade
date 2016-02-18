@@ -1,0 +1,35 @@
+extends layout
+block style
+  style.
+    body {
+      background-color: #FEFFD6;
+    }
+    .nav {
+      float: right;
+    }
+    .nav a{
+      margin-left:20px;
+    }
+
+block scripts
+  script.
+    window.onload = function() {
+        document.getElementById('pages').addEventListener('dblclick', clickHandler, false);
+    }
+    
+    function clickHandler(event) {
+        var obj = event.target;
+        if (obj.tagName.toLowerCase() == 'img') {
+            window.open('../source.pdf#' + obj.id, 'pdf');    
+        }
+    }
+
+block content
+  .nav
+    != nav
+  #pages
+    each val in images
+      p: img(id=parseInt(/\d+/g.exec(val)[0]).toString(), width=width, height=height, src='../images/' + val)
+  .nav
+    != nav
+

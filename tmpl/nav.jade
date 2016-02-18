@@ -1,0 +1,12 @@
+span 总共#{total}页, 当前第#{current}页 
+a(href='../index.html') 目录
+- var pre = current - 1, next = current + 1
+if total > 1
+  if current > 1 
+    a(href='1.html') 首页
+  if total > current
+    a(href=total+'.html') 末页
+  if current > 1 
+    a(href=pre+'.html') 上一页
+  if total > current
+    a(href=next+'.html') 下一页

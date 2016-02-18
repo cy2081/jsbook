@@ -1,0 +1,23 @@
+{
+  "name": "jsbook",
+  "version": "1.0.0",
+  "description": "convert pdf file to html book",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "image-size": "^0.4.0",
+    "jade": "^1.11.0"
+  },
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "cy@baow.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cy2081/jsbook.git"
+  },
+  "bin": {
+    "jsbook": "./bin/jsbook.js"
+  },
+  "license": "ISC"
+}

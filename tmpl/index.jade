@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= pageTitle
+  - for (var i=1; i <= pages; i++) {
+    p: a(href='pages/#{i}.html') 第 #{i} 部分
+  - }
+
+
