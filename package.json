@@ -1,6 +1,6 @@
 {
   "name": "jsbook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "convert pdf file to html book",
   "dependencies": {
     "colors": "^1.1.2",
@@ -9,8 +9,7 @@
     "jade": "^1.11.0"
   },
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "cy@baow.com",
   "repository": {
     "type": "git",
