@@ -7,7 +7,9 @@ jsbook 是一个用Node.js编写的可以批量把pdf文件转换成html网页�
 
 ## Installation
 
-    $ sudo npm install jsbook
+```
+    sudo npm install jsbook
+```
 
 ## Usage
 
