@@ -3,7 +3,6 @@
 jsbook 是一个用Node.js编写的可以批量把pdf文件转换成html网页格式的小工具。目前只在linux系统中测试通过，并且系统中需要安装poppler，通过调用其中的pdftocairo命令先转换成图片，再转换成html网页。
 
 作者: 川月
-电邮: cy@baow.com
 
 ## Installation
 

@@ -33,4 +33,11 @@ program
       jsbook.build(true, true);
   });
 
+program
+  .command('apdf <apdf>')
+  .description('build a pdf file to html book in current working directory')
+  .action(function (apdf) {
+      jsbook.build(false, false, false, apdf);
+  });
+
 program.parse(process.argv);
